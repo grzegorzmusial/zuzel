@@ -1,0 +1,138 @@
+PASS No throttle: all four motorcycles remain stationary
+PASS Throttle without steering: hits wall and cannot complete a lap
+PASS Independent input: one player cannot accelerate the other three
+PASS Track phase continuity at 0.0
+PASS Track phase continuity at 240.0
+PASS Track phase continuity at 1308.1
+PASS Track phase continuity at 1788.1
+PASS Track phase continuity at 2856.3
+PASS Track phase continuity at 3096.3
+PASS Steering works at standstill without moving automatically
+Wall recovery: speed=8.021014, position=<882.176  107.78666>, heading=1.7452444, hits=31
+PASS A stationary motorcycle can steer and accelerate away from the wall
+Rider 1: distance=12385, finish=54.10, walls=0
+Rider 2: distance=12387, finish=54.77, walls=0
+Rider 3: distance=12385, finish=56.39, walls=8
+Rider 4: distance=12387, finish=57.62, walls=141
+PASS Four independent riders finish four laps
+PASS Unique race classification
+PASS Finite physics positions and velocities
+PASS Driving backwards does not count forward progress
+PASS Restart clears race state
+PASS Waiting at the tape causes no false start and no race-time advance
+PASS Riding into the tape before the start disqualifies that rider
+PASS One false start does not exclude other players
+PASS A disqualified rider is ranked last after remaining riders finish
+PASS Four tape exclusions end the race without hanging
+PASS All twelve driving keys can be held independently
+1,000,000 repeated key messages: 19.35 ms
+PASS Held-key repeats do not retrigger interface actions
+PASS Held-key handler remains bounded under a million repeated messages
+PASS Releasing keys clears all driving controls
+PASS Straight: left foot remains on the footpeg
+PASS Corner at speed: left leg extends
+PASS Leaving the corner retracts the leg on the straight
+PASS Standing still on a corner does not extend the leg
+PASS The straight-riding pose is embedded in the executable
+PASS Helmet and both wheels remain pixel-identical in every leg pose
+PASS Position interpolation and rotation take the short path across the angle boundary
+PASS Cannot skip an unfinished heat
+PASS Heat 1 counted
+PASS Reopening results cannot count a heat twice
+PASS Points accumulate across all completed heats
+PASS Next heat preserves the points
+PASS Heat 2 counted
+PASS Reopening results cannot count a heat twice
+PASS Points accumulate across all completed heats
+PASS Next heat preserves the points
+PASS Heat 3 counted
+PASS Reopening results cannot count a heat twice
+PASS Points accumulate across all completed heats
+PASS Next heat preserves the points
+PASS Heat 4 counted
+PASS Reopening results cannot count a heat twice
+PASS Points accumulate across all completed heats
+PASS Next heat preserves the points
+PASS Heat 5 counted
+PASS Reopening results cannot count a heat twice
+PASS Points accumulate across all completed heats
+PASS Next heat preserves the points
+PASS Heat 6 counted
+PASS Reopening results cannot count a heat twice
+PASS Points accumulate across all completed heats
+PASS Next heat preserves the points
+PASS Heat 7 counted
+PASS Reopening results cannot count a heat twice
+PASS Points accumulate across all completed heats
+PASS Next heat preserves the points
+PASS Heat 8 counted
+PASS Reopening results cannot count a heat twice
+PASS Points accumulate across all completed heats
+PASS Next heat preserves the points
+PASS Heat 9 counted
+PASS Reopening results cannot count a heat twice
+PASS Points accumulate across all completed heats
+PASS Next heat preserves the points
+PASS Heat 10 counted
+PASS Reopening results cannot count a heat twice
+PASS Points accumulate across all completed heats
+PASS Next heat preserves the points
+PASS Heat 11 counted
+PASS Reopening results cannot count a heat twice
+PASS Points accumulate across all completed heats
+PASS Next heat preserves the points
+PASS Heat 12 counted
+PASS Reopening results cannot count a heat twice
+PASS Points accumulate across all completed heats
+PASS Next heat preserves the points
+PASS Heat 13 counted
+PASS Reopening results cannot count a heat twice
+PASS Points accumulate across all completed heats
+PASS Next heat preserves the points
+PASS Heat 14 counted
+PASS Reopening results cannot count a heat twice
+PASS Points accumulate across all completed heats
+PASS Next heat preserves the points
+PASS Heat 15 counted
+PASS Reopening results cannot count a heat twice
+PASS Points accumulate across all completed heats
+PASS Competition ends at exactly fifteen heats
+PASS Fifteen normal heats award ninety points in total
+PASS New competition resets all totals
+PASS Team score sums red/white versus blue/yellow
+PASS Tape exclusion awards zero tournament points
+PASS Final team result totals all fifteen heats
+PASS Multiple exclusions all award zero points
+PASS A fifteen-heat team draw stays a draw without adding a sixteenth heat
+PASS Each heat has four different starting gates
+PASS Full simulated heat 1 finishes and adds points
+PASS Each heat has four different starting gates
+PASS Full simulated heat 2 finishes and adds points
+PASS Each heat has four different starting gates
+PASS Full simulated heat 3 finishes and adds points
+PASS Each heat has four different starting gates
+PASS Full simulated heat 4 finishes and adds points
+PASS Each heat has four different starting gates
+PASS Full simulated heat 5 finishes and adds points
+PASS Each heat has four different starting gates
+PASS Full simulated heat 6 finishes and adds points
+PASS Each heat has four different starting gates
+PASS Full simulated heat 7 finishes and adds points
+PASS Each heat has four different starting gates
+PASS Full simulated heat 8 finishes and adds points
+PASS Each heat has four different starting gates
+PASS Full simulated heat 9 finishes and adds points
+PASS Each heat has four different starting gates
+PASS Full simulated heat 10 finishes and adds points
+PASS Each heat has four different starting gates
+PASS Full simulated heat 11 finishes and adds points
+PASS Each heat has four different starting gates
+PASS Full simulated heat 12 finishes and adds points
+PASS Each heat has four different starting gates
+PASS Full simulated heat 13 finishes and adds points
+PASS Each heat has four different starting gates
+PASS Full simulated heat 14 finishes and adds points
+PASS Each heat has four different starting gates
+PASS Full simulated heat 15 finishes and adds points
+PASS A complete simulated fifteen-heat match finishes with correct totals
+ALL TESTS PASSED

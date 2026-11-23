@@ -1,0 +1,84 @@
+ŻUŻEL 1.5 — wersja desktopowa Windows x64
+
+Uruchom Zuzel-1.5.exe. Aplikacja jest samodzielna: nie potrzebuje przeglądarki,
+logowania, internetu ani osobnej instalacji .NET. Wszystkie materiały są wewnątrz EXE.
+
+W menu wybierz 1–4 graczy. Pozostałymi zawodnikami kieruje komputer.
+Domyślnie jest włączonych czterech graczy przy jednym komputerze.
+
+STEROWANIE                 GAZ       LEWO       PRAWO
+Gracz 1, czerwony          W         A          D
+Gracz 2, niebieski         strzałka w górę / w lewo / w prawo
+Gracz 3, biały             I         J          L
+Gracz 4, żółty             Num 8     Num 4      Num 6
+
+Po podniesieniu taśmy trzymaj gaz, aby przyspieszać. Puszczenie gazu wyhamowuje motocykl.
+Lewo/prawo obraca motocykl względem jego kierunku jazdy, również po zatrzymaniu.
+Na owalu jedziecie przeciwnie do wskazówek zegara: większość łuków pokonujecie
+skręcając w lewo. Nie ma automatycznego prowadzenia po torze.
+Uderzenie w bandę lub wewnętrzny krawężnik odbiera prędkość. Można skręcić i odjechać.
+Wynik to cztery pełne okrążenia. Jazda wstecz nie nalicza postępu.
+Wszyscy czterej zawodnicy muszą dojechać do mety, żeby zakończyć bieg.
+
+Przed podniesieniem taśmy można ruszyć. Dotknięcie taśmy = wykluczenie z biegu.
+Czekaj z gazem do startu. Wykluczony zawodnik ma status TAŚMA i 0 punktów.
+
+Spacja / Enter   start turnieju, następny bieg lub wznowienie z pauzy
+P                pauza / wznowienie
+Esc              pauza; w wynikach wraca do menu; w menu zamyka grę
+R                w pauzie powtarza bieżący bieg; w wynikach przechodzi dalej
+F2               przypisanie własnych klawiszy dla każdego gracza
+F11              pełny ekran / okno (gra uruchamia się na pełnym ekranie)
+F3               rzeczywisty licznik FPS
+M                wyciszenie / włączenie dźwięku
+
+PADY
+Obsługa do czterech padów Xbox / XInput; numer pada odpowiada numerowi gracza.
+RT lub A = gaz. Lewy drążek lub krzyżak = skręt.
+Można łączyć klawiaturę i pady. Obsługa padów została zaimplementowana,
+ale nie została sprawdzona na fizycznie podłączonych kontrolerach.
+Niektóre klawiatury nie rejestrują wielu klawiszy naraz. Pomaga zmiana
+przypisań przez F2 albo użycie padów. Num 8/4/6 to blok numeryczny.
+
+USTAWIENIA I REKORD
+Zapisywane lokalnie w %LOCALAPPDATA%\ZuzelArena\settings.json.
+Gra nie nawiązuje połączeń sieciowych.
+
+DŹWIĘK
+Silniki pochodzą z filmu wskazanego przez użytkownika:
+„Bieg żużlowy | Speedway Race 4k”, worldismine
+https://www.youtube.com/watch?v=cFTH-6bVvrc
+Fragment około 00:20–00:27, przetworzony na pętlę PCM.
+Tempo, głośność i pozycja stereo zmieniają się osobno dla czterech motocykli.
+To fragment nagrania całego biegu, z jego naturalnym otoczeniem akustycznym.
+
+GRAFIKA
+Tor przygotowany narzędziem ImageGen na podstawie screena użytkownika.
+Bez widowni, trybun, reklam i zabudowy stadionu. Motocykle, kurz,
+ślady opon i interfejs są rysowane przez aplikację natywnie.
+Od wersji 1.1 tekstura jest nakładana na dokładny owal: dwie proste i dwa półkola.
+Widoczne bandy i krawężniki odpowiadają granicom fizyki motocykla.
+Źródło grafiki i dokładny prompt znajdują się w paczce z kodem.
+
+WERYFIKACJA
+Samodzielny EXE sprawdzony na tym komputerze. Testy fizyki obejmują:
+postój bez gazu, jazdę bez skręcania, niezależne sterowanie,
+ciągłość owalu, cztery pełne okrążenia, wyniki, jazdę wstecz i restart.
+
+Wersja 1.3: lewa noga na podnóżku na prostych; wysuwana na łukach przy jeździe.
+
+TRYBY WERSJI 1.4
+Indywidualny: czterech zawodników, punkty każdego zawodnika sumowane przez 15 biegów.
+Drużynowy: drużyna A (1 czerwony + 3 biały) przeciw B (2 niebieski + 4 żółty).
+Wynik drużyny to suma punktów jej obu zawodników.
+Każdy mecz lub turniej ma dokładnie 15 biegów po 4 okrążenia.
+Punkty za bieg: 3, 2, 1, 0. Wykluczenie za taśmę: 0.
+Po biegu naciśnij Spację albo kliknij Następny bieg. Suma pozostaje zachowana.
+Pola startowe rotują co bieg. Kolor zawodnika, klawisze i drużyna pozostają te same.
+Po 15. biegu wyświetlana jest klasyfikacja końcowa. Remis nie dodaje 16. biegu.
+Nowy turniej/mecz resetuje sumy. Powrót do menu i rozpoczęcie nowej rozgrywki też je resetuje.
+Bieżący turniej nie jest zapisywany między uruchomieniami programu.
+
+Wersja 1.5: usunięto przenikanie całych sylwetek. Motocykl i tułów są stałe,
+a lewa noga zgina się w dwóch stawach. 25 pozycji jest przygotowywanych raz.
+Pozycja i obrót motocykla są wygładzane między krokami fizyki.

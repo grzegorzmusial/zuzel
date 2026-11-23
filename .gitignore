@@ -1,0 +1,10 @@
+**/bin/
+**/obj/
+publish/
+verification.txt
+.vs/
+.idea/
+*.user
+*.suo
+*.exe
+*.pdb
