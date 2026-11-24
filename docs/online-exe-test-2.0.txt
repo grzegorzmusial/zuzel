@@ -1,0 +1,9 @@
+server=34.116.198.108:9050
+room=1
+slot=1
+snapshots=110
+ready=True
+motorcycle_moved=True
+phase=Racing
+ping_ms=3
+status=Pokój 1 · zawodnik 1

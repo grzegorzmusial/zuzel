@@ -8,3 +8,6 @@ verification.txt
 *.suo
 *.exe
 *.pdb
+
+online-tests.txt
+*-performance.txt

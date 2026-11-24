@@ -2,7 +2,13 @@
 
 Samodzielna gra żużlowa dla Windows x64, z widokiem toru z góry. Działa offline, bez przeglądarki i bez konta.
 
-Gotowy plik **Zuzel-1.5.exe** jest w sekcji **Releases** tego repozytorium. Pobierz go i uruchom; osobna instalacja .NET nie jest potrzebna.
+Gotowy plik **Zuzel-2.0-Online.exe** jest w sekcji **Releases** tego repozytorium. Pobierz go i uruchom; osobna instalacja .NET nie jest potrzebna.
+
+## Online — wersja 2.0
+
+Kliknij **Graj online**, wpisz nick i dołącz do serwera **34.116.198.108** (UDP 9050). Serwer automatycznie tworzy czteroosobowe pokoje. Kiedy wszyscy obecni są gotowi, startuje 15-biegowy turniej; wolne miejsca uzupełnia AI. W online sterujesz W/A/D lub przypisaniem gracza 1. Gra lokalna pozostaje dostępna.
+
+[Instrukcja online, Docker i wdrożenie Google Cloud](docs/ONLINE.md).
 
 ## Rozgrywka
 
@@ -35,7 +41,7 @@ Niektóre klawiatury ograniczają liczbę jednoczesnych naciśnięć. Można zmi
 
 ## Budowanie
 
-Wymagany Windows i .NET SDK 10. Projekt nie wymaga dodatkowych pakietów NuGet poza platformą .NET/Windows Desktop.
+Wymagany Windows i .NET SDK 10. Pakiet LiteNetLib 1.3.5 jest pobierany automatycznie przez NuGet. Wspólna biblioteka sieciowa jest również dołączana do samodzielnego EXE.
 
 ```powershell
 dotnet build src/Zuzel/Zuzel.csproj -c Release

@@ -18,7 +18,7 @@ public sealed class Bindings
 {
     public int Humans{get;set;}=4;
     public int[][] Keys{get;set;}=new[]{new[]{(int)System.Windows.Forms.Keys.W,(int)System.Windows.Forms.Keys.A,(int)System.Windows.Forms.Keys.D},new[]{(int)System.Windows.Forms.Keys.Up,(int)System.Windows.Forms.Keys.Left,(int)System.Windows.Forms.Keys.Right},new[]{(int)System.Windows.Forms.Keys.I,(int)System.Windows.Forms.Keys.J,(int)System.Windows.Forms.Keys.L},new[]{(int)System.Windows.Forms.Keys.NumPad8,(int)System.Windows.Forms.Keys.NumPad4,(int)System.Windows.Forms.Keys.NumPad6}};
-    public float Best{get;set;}public bool Muted{get;set;}public CompetitionMode Mode{get;set;}
+    public float Best{get;set;}public bool Muted{get;set;}public CompetitionMode Mode{get;set;}public string Nickname{get;set;}="Zawodnik";public string Server{get;set;}="34.116.198.108";
     public static string Folder=>Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),"ZuzelArena");
     public static Bindings Load(){try{var b=JsonSerializer.Deserialize<Bindings>(File.ReadAllText(Path.Combine(Folder,"settings.json")))!;if(b.Keys.Length!=4||b.Keys.Any(k=>k.Length!=3))return new();b.Humans=Math.Clamp(b.Humans,1,4);return b;}catch{return new();}}
     public void Save(){try{Directory.CreateDirectory(Folder);File.WriteAllText(Path.Combine(Folder,"settings.json"),JsonSerializer.Serialize(this));}catch{}}

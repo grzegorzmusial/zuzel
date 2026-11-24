@@ -1,0 +1,20 @@
+services:
+  server:
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile
+    image: zuzel-server:2.0
+    restart: unless-stopped
+    ports:
+      - "9050:9050/udp"
+    environment:
+      MAX_ROOMS: "16"
+    read_only: true
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    mem_limit: 512m
+    logging:
+      driver: json-file
+      options:
+        max-size: "5m"
+        max-file: "2"

@@ -1,0 +1,27 @@
+PASS Server starts with exactly room 1
+PASS First four players join room 1
+PASS First four players join room 1
+PASS First four players join room 1
+PASS First four players join room 1
+PASS Fifth player automatically opens room 2
+PASS A room never has more than four players
+PASS Vacant waiting-room seat is reused before creating rooms
+PASS All ready players lock the room and begin countdown
+PASS New users cannot replace competitors in an active tournament
+PASS Stale input sequences are rejected
+PASS Non-finite input is rejected
+PASS Full room snapshot fits comfortably within a UDP packet
+PASS Snapshot has a protocol marker
+PASS Binary protocol roundtrip preserves room and rider data
+PASS Online room completes fifteen heats and sums all ninety points
+PASS After the final results the room returns to a clean lobby
+PASS Individual and team players get compatible rooms
+PASS Existing room accepts a compatible player at server room limit
+PASS Ready solo player can race with three AI riders
+PASS Stalled racer times out and room progresses to the next heat
+PASS Empty active room resets to an available lobby
+PASS Five actual UDP clients all receive server snapshots
+PASS Actual network clients are split four plus one across two rooms
+PASS Four ready network clients enter the same live race
+PASS Remote throttle input moves the server-authoritative motorcycle
+PASS Second room stays independent while room 1 races

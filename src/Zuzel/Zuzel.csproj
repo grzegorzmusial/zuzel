@@ -4,7 +4,8 @@
     <ImplicitUsings>enable</ImplicitUsings><Nullable>enable</Nullable><AssemblyName>Zuzel</AssemblyName><RootNamespace>Zuzel</RootNamespace>
     <PublishSingleFile>true</PublishSingleFile><SelfContained>true</SelfContained><RuntimeIdentifier>win-x64</RuntimeIdentifier>
     <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract><EnableCompressionInSingleFile>true</EnableCompressionInSingleFile>
-    <Version>1.5.0</Version><FileVersion>1.5.0.0</FileVersion><DebugType>none</DebugType><ApplicationHighDpiMode>PerMonitorV2</ApplicationHighDpiMode>
+    <Version>2.0.0</Version><FileVersion>2.0.0.0</FileVersion><DebugType>none</DebugType><ApplicationHighDpiMode>PerMonitorV2</ApplicationHighDpiMode>
   </PropertyGroup>
   <ItemGroup><EmbeddedResource Include="Assets/track.png" Condition="Exists('Assets/track.png')"/><EmbeddedResource Include="Assets/riders.png" Condition="Exists('Assets/riders.png')"/><EmbeddedResource Include="Assets/riders-straight.png" Condition="Exists('Assets/riders-straight.png')"/><EmbeddedResource Include="Assets/engine.wav"/></ItemGroup>
+  <ItemGroup><Compile Remove="Physics.cs;Tournament.cs"/><ProjectReference Include="../Zuzel.Network/Zuzel.Network.csproj"/></ItemGroup>
 </Project>

@@ -1,0 +1,7 @@
+.git
+**/bin
+**/obj
+src/Zuzel/Assets
+docs
+publish
+*.exe
